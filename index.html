@@ -18,20 +18,22 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
   </head>
-  <body onload="draw()">
+  <body onload="draw2()">
     <h1>canvas experiments!</h1>
 
     <p>
       Piccoli esperimenti...
-      Please press the 
-      <button onclick="cambia()">button</button>
+      Please press the <button onclick="cambia()">button</button>
     </p>
-  <button onclick="size++;cambia()">+</button>
-  <button onclick="size--;cambia()">-</button>
+      </button>
+  <button onclick='size++;cambia()'>+</button>
+  <button onclick='size--;cambia()'>-</button>
     
-    <p>Size of the drawing
-<span id="size">
-  2</span></p>
+  </button>
+    </p>
+<p id='size'>
+  2</p>
+</p>
     <canvas id="canvas" height="500" width="500">This is your canvas</canvas>
 
     <!-- include the Glitch button to show what the webpage is about and
