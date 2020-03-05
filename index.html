@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body onload="draw()">
+    <h1>canvas experiments!</h1>
+
+    <p>
+      Piccoli esperimenti...
+      Please press the 
+      <button onclick="cambia()">button</button>
+    </p>
+  <button onclick="size++;cambia()">+</button>
+  <button onclick="size--;cambia()">-</button>
+    
+    <p>Size of the drawing
+<span id="size">
+  2</span></p>
+    <canvas id="canvas" height="500" width="500">This is your canvas</canvas>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    for educational purposes i removed the button. will put back -->
+  </body>
+</html>
